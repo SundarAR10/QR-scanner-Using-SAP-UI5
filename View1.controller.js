@@ -15,11 +15,12 @@ sap.ui.define([
             var that = this;
             BarcodeScanner.scan(
                 function (mResult) {
-                  
+                  if (!mResult.cancelled) {
+                        that.getView().byId("QRNumber").setValue(mResult.text);
                         MessageBox.show("We got a QR code\n" +
                             "Result: " + mResult.text + "\n" +
                             "Format: " + mResult.format + "\n");
-                    })
+                    }})
                 },
                 function (error) {
                     MessageBox.error("Scanning failed: " + error);
