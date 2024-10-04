@@ -9,7 +9,7 @@
                         <VBox id="_IDGenVBox">
                             <Button  id="scanner" icon="sap-icon://qr-code" text="Scan" press="onScan"/>
                             <Label id="qrvalue" text="Scan QR"/>
-                            <Input id="materialNumber" value=""/>
+                            <Input id="QRNumber" value=""/>
                         </VBox>
                     </content>
                 </Page>
