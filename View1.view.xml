@@ -1,0 +1,20 @@
+<mvc:View controllerName="qrscanner.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+     <Shell id="shell">
+        <App id="App">
+            <pages>
+                <Page id="page" title="Scan QR Code Integration in SAP UI5">
+                    <content>
+                        <VBox id="_IDGenVBox">
+                            <Button  id="scanner" icon="sap-icon://qr-code" text="Scan" press="onScan"/>
+                            <Label id="qrvalue" text="Scan QR"/>
+                            <Input id="materialNumber" value=""/>
+                        </VBox>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
+
